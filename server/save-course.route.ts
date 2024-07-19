@@ -8,7 +8,7 @@ export function saveCourse(req: Request, res: Response) {
   const id = req.params["id"] as any,
     changes = req.body;
 
-  console.log("Saving course", id, JSON.stringify(changes));
+  // console.log("Saving course", id, JSON.stringify(changes));
 
   const course = findCourseById(id);
 
